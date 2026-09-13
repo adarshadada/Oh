@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Youtik</title>
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+<header class="header">
+<a href="index.html" class="logo">youtik</a>
+<form id="searchForm" class="search">
+<input id="searchInput" placeholder="Search videos">
+<button>Search</button>
+</form>
+<button id="accountBtn" class="primary">Sign in</button>
+</header>
+<div class="layout">
+<aside class="sidebar">
+<button onclick="showHome()">Home</button>
+<button onclick="showUpload()">Upload</button>
+<button onclick="showLibrary()">Your videos</button>
+<button onclick="showAuth()">Account</button>
+</aside>
+<main id="app" class="content"></main>
+</div>
+<footer>
+<a href="privacy.html">Privacy Policy</a>
+<a href="terms.html">Terms and Conditions</a>
+</footer>
+<script src="supabase.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
